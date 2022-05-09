@@ -8,8 +8,10 @@ void main()
 
     do
     {
+        do{
         printf("\nInforme um numero positivo: \n "); // solicito um número 
-        scanf("%d", &l);        // recebo ele como l
+        scanf("%d", &l);}        // recebo ele como l
+        while(l<=0);           // laço para entrar apenas numeros positivos
         printf("\n");
         for (i = 1; i <= l; ++i)    // inicio com i valendo 1 e terminando com o valor deixado pelo usuario acrescentando 1 a cada ciclo
         {
